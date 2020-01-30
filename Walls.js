@@ -8,18 +8,22 @@ class Walls {
         this.posZ = this.posZ
 
         this.image = new Image();
-        this.image.src = "./Images/Ice_Block_NSMBDIY.png";
+        this.image.src = "./Images/wall.xcf";
 
-        let img = document.getElementById("ice");
+        //let img = document.getElementById("ice");
 
     }
 
 
 
     draw() {
-        console.log(this.posX, this.posY, this.width, this.height)
+        // console.log(this.posX, this.posY, this.width, this.height)
         this.ctx.lineWidth = 10;
-        this.ctx.fillStyle = "#00838F";
+        this.ctx.fillStyle = "#B0DADE";
+        // this.image = new Image();
+        // this.image.src = "./Images/wall.xcf";
+        // let textura = this.ctx.createPattern(imagen, 'repeat');
+        // this.ctx.fillStyle = textura;
         this.ctx.beginPath();
         this.ctx.fillRect(this.posX, this.posY, this.width, this.height);
         this.ctx.closePath();
@@ -32,8 +36,7 @@ class Walls {
         // this.ctx.lineTo(40, 710);
         // this.ctx.lineTo(430, 710);
         // this.ctx.fill();
-        // this.ctx.closePath();
-
+        // this.ctx.closePath(); 
     }
 
 

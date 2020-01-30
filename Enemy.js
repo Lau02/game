@@ -51,21 +51,78 @@ class Enemy {
                 break;
 
             case "warrior":
-                if (this.posX  < this.posX0) {
-                    this.vel = this.vel*-1
+                if (this.posX < this.posX0) {
+                    this.vel = this.vel * -1
                     //this.posY = 390
                 }
-                if (this.posX > (this.posX0+350)) {
-                    this.vel = this.vel*-1
+                if (this.posX > (this.posX0 + 350)) {
+                    this.vel = this.vel * -1
                 }
 
                 this.posX += this.vel
                 break;
-                
+
                 console.log(this.posX, this.posY)
 
-                // console.log("muevete!")
-                // this.posX += this.vel
+            case "soldier":
+                if (this.posX < this.posX0) {
+                    this.vel = this.vel * -1
+                    //this.posY = 390
+                }
+                if (this.posX > (this.posX0 + 950)) {
+                    this.vel = this.vel * -1
+                }
+
+                this.posX -= this.vel
+                break;
+            case "soldier2":
+                if (this.posX < this.posX0) {
+                    this.vel = this.vel * -1
+                    //this.posY = 390
+                }
+                if (this.posX > (this.posX0 +200)) {
+                    this.vel = this.vel * -1
+                }
+
+                this.posX -= this.vel
+                break;
+
+            case "devil":
+                if (this.posX < this.posX0) {
+                    this.vel = this.vel * -1
+                    //this.posY = 390
+                }
+                if (this.posX > (this.posX0 + 100)) {
+                    this.vel = this.vel * -1
+                }
+
+                this.posX -= this.vel
+                break;
+
+            case "gost":
+                if (this.posX < this.posX0) {
+                    this.vel = this.vel * -1
+                    //this.posY = 390
+                }
+                if (this.posX > (this.posX0 + 170)) {
+                    this.vel = this.vel * -1
+                }
+
+                this.posX -= this.vel
+                break;
+
+            case "1Warrior":
+                if (this.posX < this.posX0) {
+                    this.vel = this.vel * -1
+                    //this.posY = 390
+                }
+                if (this.posX > (this.posX0 + 950)) {
+                    this.vel = this.vel * -1
+                }
+
+                this.posX -= this.vel
+                break;
+
         }
     }
 
@@ -86,6 +143,28 @@ class Enemy {
         if (this.type === "warrior") {
             this.image = new Image();
             this.image.src = "./Images/warrior.png"
+        }
+
+        if (this.type === "soldier") {
+            this.image = new Image();
+            this.image.src = "./Images/Onox.png"
+        }
+
+        if (this.type === "devil") {
+            this.image = new Image();
+            this.image.src = "./Images/princess2.gif"
+        }
+
+        if (this.type === "gost") {
+            this.image = new Image();
+            this.image.src = "./Images/300px-Reapling.png"
+
+        }
+
+        if (this.type === "1warrior") {
+            this.image = new Image();
+            this.image.src = "./Images/Shredder.gif"
+
         }
 
 
@@ -127,6 +206,12 @@ class Enemy {
 //     this.ctx.drawImage(this.image, this.posX, this.posY, this.width, this.height);
 // }
 
-// attack() {
+
 
 // }
+
+// let coordinates = [
+//     [1260, 20, 100, 30],[20, 600, 50, 130]
+// ]
+
+// coordinates.forEach(coordinate => this.wallsArr.push(new Walls(this.ctx, coordinate[0], coordinate[1], coordinate[2], coordinate[3])))

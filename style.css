@@ -1,22 +1,41 @@
 body {
-    margin: 20, 40;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  background-image: url("./Images/back3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
- canvas {
-     border: 5px solid yellow;
- }
 
- #start-button{
-   background-color: black;
-   color: yellow;
-   padding: 10px 20px;
-   border: 0;
-   box-shadow: 0;
-   border-radius: 5px;
-   margin-bottom: 20px;
- }
+canvas {
+  border: 5px solid yellow;
 
-div{
+}
 
-border: 3px solid black;
- }
+.game-canvas {
+  display: none;
+}
+
+.stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 80vw;
+
+
+}
+
+#start-button {
+
+  background-color: black;
+  font-family: "Jim Nightshade";
+  width: 250px;
+  padding: 20px 10px;
+  font-size: 40px;
+  color: yellow;
+
+  border: 0;
+  box-shadow: 0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}

@@ -14,7 +14,7 @@ class Swords {
         this.velY = 1;
 
         this.image = new Image();
-        this.image.src = "./Images/swordspritesheet.png";
+        this.image.src = "./Images/bomb.jpg";
 
 
         this.gravity = 1;

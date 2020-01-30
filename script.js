@@ -1,12 +1,9 @@
+
 window.onload = function () {
     document.getElementById("start-button").onclick = function () {
-
-        startGame();
-        //this.enemy.move();
-    };
-
-    function startGame() {
+        document.querySelector(".stage").style.display = "none";
+        document.querySelector(".game-canvas").style.display = "flex"
         game.init();
     }
-
-};
+    
+}
